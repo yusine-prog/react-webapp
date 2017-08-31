@@ -21,7 +21,7 @@ module.exports = {
   output: {
     path: __dirname + "/build",
     filename: "[name].[chunkhash:8].js",
-    publicPath: '/'
+    publicPath: './'
   },
 
   resolve:{
@@ -42,9 +42,6 @@ module.exports = {
   ],
 
   plugins: [
-    // webpack 内置的 banner-plugin
-    new webpack.BannerPlugin("Copyright by wangfupeng1988@github.com."),
-
     // html 模板插件
     new HtmlWebpackPlugin({
         template: __dirname + '/app/index.tmpl.html'
