@@ -19,7 +19,6 @@ class Home extends React.Component {
         <Category />
         <div style={{ height: '15px' }}></div>
         <Ad />
-        <div>asd</div>
       </div>
     )
   }
