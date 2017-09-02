@@ -2,8 +2,8 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import './index.less'
 class User extends React.Component {
-    constructor(props, context) {
-        super(props, context);
+    constructor() {
+        super();
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {

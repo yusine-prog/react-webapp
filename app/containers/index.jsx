@@ -8,8 +8,8 @@ import 'normalize.css'
 import '../static/css/iconfont.css'
 
 class App extends React.Component {
-    constructor(props, context) {
-        super(props, context);
+    constructor() {
+        super();
         this.state = {
             initDone: false
         }
