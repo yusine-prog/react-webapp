@@ -2,6 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import './index.less';
 
+// 猜你喜欢列表组件
 class List extends React.Component {
     constructor() {
         super();

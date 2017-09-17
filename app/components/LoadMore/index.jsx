@@ -1,6 +1,5 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-
 import './style.less'
 
 class LoadMore extends React.Component {
@@ -28,10 +27,11 @@ class LoadMore extends React.Component {
                 const top = wrapper.getBoundingClientRect().top;
                 
                 if (top && top < bodyHeight) {
+                    // 执行加载更多的事件
                     this.props.loadMoreFn();
                 }
             }
-
+            // 若正在加载则不执行
             if (this.props.isLoadingMore) {
                  return
             }

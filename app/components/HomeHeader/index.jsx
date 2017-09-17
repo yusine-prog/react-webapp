@@ -2,6 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { Link } from 'react-router'
 import './index.less'
+
 class User extends React.Component {
     constructor() {
         super();
