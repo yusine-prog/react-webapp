@@ -1,5 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import { Link } from 'react-router'
 import './index.less'
 class User extends React.Component {
     constructor() {
@@ -10,7 +11,9 @@ class User extends React.Component {
         return (
             <div>
                 <header className="index-header">
-                    <a className="iconfont icon-down city">{this.props.cityName}</a>
+                    <Link to="/city">
+                        <a className="iconfont icon-down city">{this.props.cityName}</a>
+                    </Link>
                     <div className="search-wrap">
                         <a className="iconfont icon-search"></a>
                         <input className="search-input" />
