@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import HomeHeader from '../../components/HomeHeader/index.jsx'
 import Category from '../../components/Category/index.jsx'
-import Ad from './subpage/ad.jsx'
-
+import Ad from './subpage/Ad.jsx'
+import List from './subpage/List.jsx'
 
 class Home extends React.Component {
   constructor(props, context) {
@@ -19,6 +19,8 @@ class Home extends React.Component {
         <Category />
         <div style={{ height: '15px' }}></div>
         <Ad />
+        <div style={{ height: '15px' }}></div>
+        <List cityName={this.props.userinfo.cityName} />
       </div>
     )
   }
@@ -26,7 +28,7 @@ class Home extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    userinfo: state.userinfo
+    userinfo: state.userinfo,
   }
 }
 

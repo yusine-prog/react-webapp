@@ -2,16 +2,16 @@ module.exports = {
     hasMore: true,
     data: [
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201638030-473660627.png',
-            title: '汉堡大大',
-            subTitle: '叫我汉堡大大，还你多彩口味',
+            img: '//p0.meituan.net/deal/6a58116a49d39963561fc3c011b1cf6c29499.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0',
+            title: '龙门花甲',
+            subTitle: '[40店通用] 套餐一，建议单人使用',
             price: '28',
             distance: '120m',
             mumber: '389',
             id: Math.random().toString().slice(2)
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201645858-1342445625.png',
+            img: '//p0.meituan.net/deal/734cc7ea91a299ddae06931adb300c1e84340.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0',
             title: '北京开源饭店',
             subTitle: '[望京]自助晚餐',
             price: '98',
@@ -20,7 +20,7 @@ module.exports = {
             id: Math.random().toString().slice(2)
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201652952-1050532278.png',
+            img: '//p1.meituan.net/deal/819446eff057d02a0fa5327fe13c56ea96254.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0',
             title: '服装定制',
             subTitle: '原价xx元，现价xx元，可修改一次',
             price: '1980',
@@ -29,18 +29,18 @@ module.exports = {
             id: Math.random().toString().slice(2)
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201700186-1351787273.png',
-            title: '婚纱摄影',
-            subTitle: '免费试穿，拍照留念',
+            img: '//p1.meituan.net/deal/819446eff057d02a0fa5327fe13c56ea96254.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0',
+            title: '紫燕百味鸡',
+            subTitle: '[卓刀泉南路等123店] 20元代金券1张，可叠加',
             price: '2899',
             distance: '160',
             mumber: '58',
             id: Math.random().toString().slice(2)
         },
         {
-            img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201708124-1116595594.png',
-            title: '麻辣串串烧',
-            subTitle: '双人免费套餐等你抢购',
+            img: '//p0.meituan.net/deal/c0e9022fdb46309f1b3199ae309e0242134129.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0',
+            title: '尊宝比萨',
+            subTitle: '[珞狮南路等37店] 双人餐，提供免费WiFi',
             price: '0',
             distance: '160',
             mumber: '1426',

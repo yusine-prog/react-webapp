@@ -5,7 +5,7 @@ export function getAdDate() {
 	return result
 }
 
-export function getListDate(city, page) {
-	const result = get('/api/homeList/' + encodeURIComponent(city))
+export function getListData(city, page) {
+	const result = get('/api/homeList/' + encodeURIComponent(city) + '/' + page)
 	return result
 }
