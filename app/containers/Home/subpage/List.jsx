@@ -56,6 +56,10 @@ class List extends React.Component {
                 hasMore: hasMore,
                 data: this.state.data.concat(data),
             });
+        }).catch(ex => {
+            if (__DEV__) {
+                console.error('首页”猜你喜欢“获取数据报错, ', ex.message)
+            }
         })
     }
     render() {

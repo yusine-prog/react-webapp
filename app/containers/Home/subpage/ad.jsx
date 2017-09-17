@@ -6,7 +6,7 @@ class Ad extends React.Component {
     constructor() {
         super();
         this.state = {
-            data: []
+            data: [],
         }
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
@@ -15,20 +15,22 @@ class Ad extends React.Component {
         .then(response => response.json())
         .then(data => {
             if(data.length) {
-                this.setState({
-                    data
-                })
+                this.setState({ data });
+            }
+        }).catch(ex => {
+            if (__DEV__) {
+                console.error('首页”超值特惠“获取数据报错, ', ex.message);
             }
         })
     }
     render() {
         return (
             <div>
-                {
-                    this.state.data.length
-                    ? <HomeAd data={this.state.data} />
-                    : <div>数据加载中</div>
-                }
+                {this.state.data.length ? (
+                    <HomeAd data={this.state.data} />
+                ) : (
+                    <div>数据加载中</div>
+                )}
             </div>
         )
     }
