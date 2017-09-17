@@ -19,8 +19,9 @@ class App extends React.Component {
         let cityName = LocalStore.getItem('cityName');
         if(cityName == null) {
             cityName = '武汉';
+            LocalStore.setItem('cityName', cityName);
         }
-        this.props.userinfoAction.update({ cityName })
+        this.props.userinfoAction.update({ cityName });
         this.setState({
             initDone: true
         })

@@ -1,7 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
 import HomeHeader from '../../components/HomeHeader/index.jsx'
 import Category from '../../components/Category/index.jsx'
 import Ad from './subpage/Ad.jsx'
