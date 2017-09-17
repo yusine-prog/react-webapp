@@ -13,7 +13,7 @@ class User extends React.Component {
             <div>
                 <header className="index-header">
                     <Link to="/city">
-                        <a className="iconfont icon-down city">{this.props.cityName}</a>
+                        <span className="iconfont icon-down city">{this.props.cityName}</span>
                     </Link>
                     <div className="search-wrap">
                         <a className="iconfont icon-search"></a>

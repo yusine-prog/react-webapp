@@ -2,6 +2,7 @@ import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { connect } from 'react-redux'
 import Header from '../../components/Header'
+import CityList from '../../components/CityList'
 
 class City extends React.Component {
     constructor() {
@@ -13,6 +14,7 @@ class City extends React.Component {
             <div>
                 <Header title='选择城市' />
                 <div className="locate_line">{this.props.userinfo.cityName}</div>
+                <CityList />
             </div>
         )
     }

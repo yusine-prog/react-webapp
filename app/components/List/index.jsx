@@ -28,8 +28,8 @@ class List extends React.Component {
                                 </div>
                                 <div className="shop_name_sub">{item.subTitle}</div>
                                 <div className="item_price">
-                                    <div className="price_current">{item.price}</div>
-                                    <div className="sale_desc">{item.mumber}</div>
+                                    <div className="price_current">￥{item.price}</div>
+                                    <div className="sale_desc">已售 {item.mumber}</div>
                                 </div>
                             </div>
                         </a>
