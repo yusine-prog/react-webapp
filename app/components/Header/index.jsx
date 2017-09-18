@@ -8,10 +8,13 @@ class Header extends React.Component {
         super();
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
+    backHander() {
+        window.history.back();
+    }
     render() {
         return (
             <div className="common-header">
-                <a className="back"></a>
+                <a className="back" onClick={this.backHander}></a>
                 <div className="header-title">{this.props.title}</div>
                 <div></div>
             </div>

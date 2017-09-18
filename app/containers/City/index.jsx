@@ -1,5 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import { hashHistory } from 'react-router'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as userinfoAction from '../../actions/userinfo.js'
@@ -11,10 +12,7 @@ class City extends React.Component {
     constructor() {
         super();
         this.changeCity = this.changeCity.bind(this);
-        //this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-    }
-    componentDidMount() {
-        this.changeCity('beijin');
+        this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     changeCity(newCity) {
         if (!newCity) {
@@ -24,9 +22,9 @@ class City extends React.Component {
         userinfo.cityName = newCity;
         this.props.userinfoActions.update(userinfo);
         LocalStore.setItem('cityName', newCity);
+        hashHistory.push('/');
     }
     render() {
-        console.log(this.props,this.props.userinfo.cityName);
         return (
             <div>
                 <Header title='选择城市' />
