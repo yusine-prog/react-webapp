@@ -65,11 +65,11 @@ class List extends React.Component {
     render() {
         return (
             <div className="index_for_you">
-                <div className="index_like_title">猜你喜欢 {this.state.page}</div>
+                <div className="index_like_title">猜你喜欢</div>
                 {this.state.data.length ? (
                     <ListComponent data={this.state.data} />
                 ) : (
-                    <div>加载中...</div>
+                    <div className="loading">数据加载中...</div>
                 )}
                 {
                     this.state.hasMore

@@ -29,7 +29,7 @@ class Ad extends React.Component {
                 {this.state.data.length ? (
                     <HomeAd data={this.state.data} />
                 ) : (
-                    <div>数据加载中</div>
+                    <div className="loading">数据加载中...</div>
                 )}
             </div>
         )

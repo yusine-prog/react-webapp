@@ -20,15 +20,21 @@ class City extends React.Component {
         }
         const userinfo = this.props.userinfo;
         userinfo.cityName = newCity;
+        // 修改redux
         this.props.userinfoActions.update(userinfo);
+        // 更新localStorage里的城市信息
         LocalStore.setItem('cityName', newCity);
+        // 跳转到首页
         hashHistory.push('/');
     }
     render() {
         return (
             <div>
                 <Header title='选择城市' />
-                <div className="locate_line">{this.props.userinfo.cityName}</div>
+                <div className="locate_line">
+                    <span className="current-city">{this.props.userinfo.cityName}</span>
+                    <sub>GPS定位</sub>
+                </div>
                 <CityList changeCityFn={this.changeCity} />
             </div>
         )
