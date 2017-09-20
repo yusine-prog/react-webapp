@@ -1,25 +1,16 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { Link, hashHistory } from 'react-router'
+import SearchInput from '../SearchInput'
 import './index.less'
 
 class User extends React.Component {
     constructor() {
         super();
-        this.state = {
-            keyword: 's'
-        };
-        this.handlerChange = this.handlerChange.bind(this);
-        this.handlerKeyup = this.handlerKeyup.bind(this);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
-    handlerChange(e) {
-        this.setState({ keyword: e.target.value })
-    }
-    handlerKeyup(e) {
-        if (e.keyCode == 13) {
-            hashHistory.push('/search/all/' + encodeURIComponent(this.state.keyword));
-        }
+    enterHandle(value) {
+        hashHistory.push('/search/all/' + encodeURIComponent(value));
     }
     render() {
         return (
@@ -30,12 +21,7 @@ class User extends React.Component {
                     </Link>
                     <div className="search-wrap">
                         <a className="iconfont icon-search"></a>
-                        <input
-                            className="search-input"
-                            value={this.state.keyword}
-                            onChange={this.handlerChange}
-                            onKeyUp={this.handlerKeyup}
-                        />
+                        <SearchInput value="" enterHandle={this.enterHandle} />
                     </div>
                     <a className="iconfont icon-user"></a>
                 </header>
