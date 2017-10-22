@@ -1,5 +1,5 @@
 module.exports = {
-    img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201645858-1342445625.png',
+    img: '//p1.meituan.net/deal/819446eff057d02a0fa5327fe13c56ea96254.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0',
     title: '天下第一锅',
     star: 4,
     price: '88',
