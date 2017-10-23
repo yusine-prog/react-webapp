@@ -17,7 +17,7 @@ class CommentItem extends React.Component {
         return (
             <div className="comment-item">
                 <h3>
-                    <i className="icon-user"></i>
+                    <i className="iconfont icon-user"></i>
                     &nbsp;
                     {item.username}
                 </h3>

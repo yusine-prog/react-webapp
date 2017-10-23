@@ -6,25 +6,27 @@
   url('../fonts/iconfont.ttf?t=1508072093660') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('../fonts/iconfont.svg?t=1508072093660#iconfont') format('svg'); /* iOS 4.1- */
 }
+
 .iconfont {
   font-family:"iconfont" !important;
+  font-size:16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
 }
 
-.iconfont:before,
-.iconfont:after {
-  font-size:20px;
-}
+.icon-user:before { content: "\e6a0"; }
 
-.icon-user:after { content: "\e6a0"; }
+.icon-key:before { content: "\e715"; }
 
-.icon-search:after { content: "\e63e"; }
+.icon-shouji:before { content: "\e621"; }
 
-.icon-down:after { content: "\e615"; }
+.icon-search:before { content: "\e63e"; }
 
-.icon-arrow-right:after { content: "\e603"; }
+.icon-star:before { content: "\e6c9"; }
 
-.icon-star:after { content: "\e6c9"; }
+.icon-down:before { content: "\e615"; }
+
+.icon-arrow-right:before { content: "\e603"; }
 
