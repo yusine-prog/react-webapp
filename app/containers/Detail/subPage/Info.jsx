@@ -23,12 +23,10 @@ class Info extends React.Component {
         })
     }
     render() {
-
-        return (
-        	<div>
-        		{this.state.info ? <DetailInfo data={this.state.info} /> : null}
-        	</div>
-        )
+        if (this.state.info) {
+            return <DetailInfo data={this.state.info} />
+        }
+        return null
     }
 }
 

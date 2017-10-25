@@ -43,12 +43,14 @@ class Login extends React.Component {
     	const params = this.props.params;
     	if (params.router) {
     		// 跳转到指定的页面
-    		hashHistory.push(router);
+    		hashHistory.push(params.router);
     	} else {
     		this.goUserPage();
     	}
 
     }
+
+    // 跳转到用户中心
     goUserPage() {
     	hashHistory.push('/User');
     }

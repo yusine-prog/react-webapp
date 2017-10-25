@@ -3,6 +3,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import Header from '../../components/Header'
 import Info from './subPage/Info.jsx'
+import Buy from './subPage/Buy.jsx'
 import Comment from './subPage/Comment.jsx'
 
 class Detail extends React.Component {
@@ -16,6 +17,7 @@ class Detail extends React.Component {
             <div>
                 <Header title="商品详情" />
                 <Info id={id} />
+                <Buy id={id} />
                 <Comment id={id} />
             </div>
         )

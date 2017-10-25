@@ -24,7 +24,7 @@ class User extends React.Component {
                         <SearchInput value="" enterHandle={this.enterHandle} />
                     </div>
                     <Link to="/login">
-                        <a className="iconfont icon-user"></a>
+                        <span className="iconfont icon-user"></span>
                     </Link>
                 </header>
                 <div className="header_fill"></div>        

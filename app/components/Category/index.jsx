@@ -28,42 +28,60 @@ class Category extends React.Component {
                 <div>美食</div>
               </div>
             </Link>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20170223152109dp_wx_maoyan_icon.png" />
-              <div>猫眼电影</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203337jiudian.png" />
-              <div>酒店</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126202841xiuxianyule.png" />
-              <div>休闲娱乐</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203251waimai.png" />
-              <div>外卖</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160204172927huoguo.png" />
-              <div>火锅</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126202946liren.png" />
-              <div>丽人</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203542ktv.png" />
-              <div>周边游</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203440zhoubianyou.png" />
-              <div>KTV</div>
-            </div>
-            <div className="item">
-              <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203830jiehun.png" />
-              <div>婚纱摄影</div>
-            </div>
+            <Link to="/search/maoyan">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20170223152109dp_wx_maoyan_icon.png" />
+                <div>猫眼电影</div>
+              </div>
+            </Link>
+            <Link to="/search/jiudian">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203337jiudian.png" />
+                <div>酒店</div>
+              </div>
+            </Link>
+            <Link to="/search/xxyl">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126202841xiuxianyule.png" />
+                <div>休闲娱乐</div>
+              </div>
+            </Link>
+            <Link to="/search/waimai">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203251waimai.png" />
+                <div>外卖</div>
+              </div>
+            </Link>
+            <Link to="/search/huoguo">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160204172927huoguo.png" />
+                <div>火锅</div>
+              </div>
+            </Link>
+            <Link to="/search/liren">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126202946liren.png" />
+                <div>丽人</div>
+              </div>
+            </Link>
+            <Link to="/search/zhoubianyou">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203542ktv.png" />
+                <div>周边游</div>
+              </div>
+            </Link>
+            <Link to="/search/ktv">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203440zhoubianyou.png" />
+                <div>KTV</div>
+              </div>
+            </Link>
+            <Link to="/search/hssy">
+              <div className="item">
+                <img className="icon" src="//www.dpfile.com/sc/eleconfig/20160126203830jiehun.png" />
+                <div>婚纱摄影</div>
+              </div>
+            </Link>
           </div>
           <div className="category-page">
             <div className="item">
