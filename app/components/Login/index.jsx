@@ -21,6 +21,7 @@ class Login extends React.Component {
                         placeholder="输入手机号" 
                         onChange={this.changeHandle.bind(this)} 
                         value={this.state.username}
+                        autoFocus={true}
                     />
                 </div>
                 <div className="input-container password-container">

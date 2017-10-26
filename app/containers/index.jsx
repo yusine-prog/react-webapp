@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import * as userinfoAction from '../actions/userinfo.js'
 import LocalStore from '../util/localStore.js'
-import 'normalize.css'
+// import 'normalize.css'
 import '../static/css/iconfont.css'
 
 class App extends React.Component {
